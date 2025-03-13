@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+	body{
+		font-family:Arial,sans-serif;
+		margin:0;
+		padding:0;
+		color:#433A5E;
+		font-size:18px;
+	}
+	*{
+		box-sizing:border-box;
+		scroll-behavior:smooth;
+	}
+	.cyan-text,
+	.cyan-text a{
+		color:#00ECBB;
+	}
+	.white-text{
+		color:#fff;
+	}
+	.grey-text{
+		color:grey;
+		font-weight:600;
+	}
+	.po-centry{
+		text-align: center; 
+	}
+	.nav{
+		list-style:none;
+		margin:0;
+		padding:0;
+		display:flex;
+		justify-content:space-evenly;
+		margin-bottom:50px;
+		align-items:center;
+	}
+	.nav li{
+		display:inline-block;
+		padding-right:10px;
+		padding-left:10px;
+		font-size:20px;
+	}
+	.nav a{
+		text-decoration:none;
+	}
+	.logo-text{
+		font-size:32px;
+		letter-spacing:5px;
+	}
+	
+	.main-section,
+	.violet-section{
+		background:#6A13EB;
+	}
+	.about-section,
+	.main-section,
+	.violet-section{
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+	.main-section{
+		padding-top:80px;
+		padding-bottom:50px;
+	}
+	.violet-section{
+		padding-top:80px;
+		padding-bottom:80px;
+		background-image:url(img/credo-bg.png);
+		background-size:cover;
+		background-position:center;
+	}
+	.violet-section p{
+		margin:0;
+	}
+	.container{
+		width:900px;
+		margin-right:auto;
+		margin-left:auto;
+	}
+	h1{
+		font-size:40px;
+		text-align:center;
+	}
+	h2{
+		color:#000;
+		font-size:40px;
+		margin-top:0;
+		letter-spacing:2px;
+	}
+	h4{
+		margin-top:0;
+		margin-bottom:10px;
+	}
+	.main-section-img{
+		display:block;
+		max-width:100%;
+		margin-left:auto;
+	margin-right:auto;
+	}
+	.checkmark-list,
+	.green-checkmark{
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	.green-checkmark{
+		column-count:2;
+	}
+	.checkmark-list li{
+		background:url("img/icon-ok.png")no-repeat center left;
+		min-height:60px;
+		padding-left:80px;
+		margin-bottom:20px;
+	}
+	.green-checkmark li{
+		background:url("img/icon-ok.png")no-repeat center left;
+		min-height:65px;
+		padding-left:80px;
+		margin-bottom:20px;
+		display:flex;
+		algin-items:center;
+		width:100%;
+	}
+	.list-user{
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	.list-user li{
+		margin-bottom:10px;
+		font-size:16px;
+	}
+	.list-user span{
+		font-size:18px;
+	}
+	.about-text{
+		font-size:18px;
+		line-height:1.7;
+		margin-bottom:40px;
+	}
+	.my-img{
+		border-radius:50%;
+	}
+	.img-wrop{
+		display: flex;
+		justify-content: space-between;
+		align-content: center; 
+		margin-bottom: 40px;
+	}
+	.flex-section{
+		display:flex;
+	}
+	#main-form{
+		display:flex;
+		flex-direction:column;
+		align-items:flex-end;
+	}
+	#main-form input,
+	#main-form textarea{
+		padding:20px;
+		margin-bottom:30px;
+		font-style:22px;
+		font-family:Arial,sans-serif;
+		outline:none;
+		border:none;
+		border:3px solid #00ECBB;
+		font-weight:700;
+		width:100%;
+	}
+	#main-form textarea{
+		height:150px;
+	}
+	#main-form #submit{
+		width:300px;
+		background:#00ECBB;
+		color:#6A13EB;
+		cursor:pointer;
+	}
+	.to-top{
+		position:fixed;
+		right:100px;
+		bottom:70px;
+		display:flex;
+		algin-items:center;
+		justify-content:center;
+		width:70px;
+		min-height:62px;
+		background:#00ECBB;
+		color:#6A13EB;
+		text-align:center;
+		margin:10px;
+		text-decoration:none;
+		font-size:30px;
+		font-weight:700;
+	}
+	.autor-block{
+		display:flex;
+		algin-items:flex-end;
+		width:457px;
+		height:411px;
+		padding:10x 60px;
+		background-image:url(img/Radio.jpg);
+		background-repeat:no-repeat;
+		background-size:cover;
+		margin-right:auto;
+		margin-left:auto;
+		box-shadow:0px -65px 56px -21px #000000 inset;
+	}
+	.autor-block p{
+		margin:0;
+		line-height:1.7;
+		color:rgb(255,255,255,0.8);
+	}
+</style>
+</head>
+<body>
+	<div class="main-section" id="top">
+	<div class="container">
+		<ul class="cyan-text nav">
+	<li>
+			<span class="cyan-text logo-text"> ОБОЛОНСЬКИЙ <br>ЄГОР</span></li>
+			<li><a href="#work">Досвід роботи</a></li>
+			<li><a href="#achievement">Досяннення</a></li>
+			<li><a href="#power">Сильні сторони</a></li>
+			<li><a href="#personally">Приватне</a></li>
+			<li><a href="#contact">Контакти</a></li>
+		</ul>
+		
+		<div class="autor-block">
+	<p class="white-text po-centry">Життєве кредо: "Всі перемоги починаются з перемоги з перемоги над собою".</p>
+	
+	</div>
+	
+	<h1 class="white-text">учень Кропивницького ВПУ</h1>
+	</div>
+	<!--container-->
+	</div>
+	<!--main-section-->
+	<div class="about-section" style="padding-bottom:30px;" id="work">
+		<div class="container">
+	<h2>Досвід роботи</h2>
+		<ol class="list-user">
+			<li><span class="grey-text">2020-2021:</span> Радіо-завод півной</li>
+		</ol>
+		</div>
+		<!--container-->
+	</div>
+			<!--about-section-->
+		<div class="about-section" style="padding-bottom:30px;" id="achievement">
+		<div class="container">
+		<h2>Мої досягнення</h2>
+	<p>Головні професійні досягнення за останні роки</p>
+	<ul class="checkmark-list">
+		<li><h4>Підвищення по роботі</h4>
+		<span>Радіомеханік з обслуговування та ремонту радіотелевізійної апаратури</span></li>
+		<li><h4>Участь у конкурсвх</h4>
+		Конкурс "Літературна візитка краю"б конкурс комп'ютерної грамотності "Бобер" конкурс на кращий авторський посібник</li>
+		<li><h4>Курси підвищення кваліфікації</h4>
+		Онлайн курс з покращення цифрових навичок</li>
+	</ul>
+	</div>
+	<!--container-->
+	</div>
+	<!--about-section-->
+	<div class="about-section"style="padding-bottom:30px;" id="power">
+		<div class="container">
+	<h2>Мої сильні сторони</h2>
+		<ul class="green-checkmark">
+			<li>Посидаючий</li>
+			<li>Стресостійкий</li>
+			<li>комунікабельний</li>
+			<li>легко навчаюсь</li>
+			<li>обєктивний</li>
+			<li>витривалий</li>
+		</ul>
+		<div>
+		<!--container-->
+	</div>
+	<!--about-section-->
+	<div class="violet-section">
+		<div class="container">
+	<h2 class="white-text">Мій принцип роботи</h2>
+	<p class="white-text"><i>Не намагайся силою досягти успіху</i></p>
+		</div>
+		<!--container-->
+	</div>
+	<!--violet-section-->
+	<div class="about-section flex-section" style="padding-bottom: 30px;" id="personally">
+		<div class="container">
+	<h2>Трохи про особисте</h2>
+		<p class="about-text">Люблю подорожувати</p>
+		<div class="img-wrop">
+		<img src="img/Snow.jpg" alt="image1" class="my-img">
+		<img src="img/CAXAPA.jpg" alt="image2" class="my-img">
+		<img src="img/Karpati.jpg" alt="image3" class="my-img">
+		</div>
+		</div>
+		<!--container-->
+	</div>
+	<!--about-section-->
+	<div class="about-section content-section" id="contact">
+		<div class="container">
+	<h2>Контакт</h2>
+		<form action="#" method="post" id="main-form">
+			<input type="text" name="name" placeholder="ПІБ">
+			<input type="mail" name="email" placeholder="Email">
+			<textarea name="messages" placeholder="Повідомлення"></textarea>
+			<input type="submit" value="Відправити" id="submit">
+		</form>
+	</div>
+	<!--container-->
+</div>
+<!--about-section-->
+<a href="#top" class="to-top">/\</a>		
+</body>
+</html>
+			
